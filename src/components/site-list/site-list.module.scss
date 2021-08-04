@@ -1,0 +1,33 @@
+.siteList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0;
+  list-style: none;
+  line-height: 19px;
+}
+
+.siteListItem {
+  cursor: pointer;
+  margin-right: 25px;
+  margin-bottom: 5px;
+  color: #1F1E25;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    color: #DDD5D5;
+  }
+}
+
+.siteListItem:last-child {
+  margin-right: 0;
+}
+
+
+.siteListItemActive {
+  color: #2C36F2;
+}
