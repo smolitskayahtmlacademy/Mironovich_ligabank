@@ -1,0 +1,86 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.item {
+  margin-right: 15px;
+  display: flex;
+}
+
+.item:last-child {
+  margin-right: 0;
+}
+
+.link {
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.linkFacebook {
+  position: relative;
+  width: 9px;
+  height: 16px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 16px;
+    background-image: url('../../assets/img/facebook-icon.svg');
+    background-repeat: no-repeat;
+  }
+}
+
+.linkInstagram {
+  position: relative;
+  width: 16px;
+  height: 16px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url('../../assets/img/instagram-icon.svg');
+    background-repeat: no-repeat;
+  }
+}
+
+.linkTwitter {
+  position: relative;
+  width: 16px;
+  height: 13px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 13px;
+    background-image: url('../../assets/img/twitter-icon.svg');
+    background-repeat: no-repeat;
+  }
+}
+
+.linkYoutube {
+  position: relative;
+  width: 16px;
+  height: 13px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 13px;
+    background-image: url('../../assets/img/youtube-icon.svg');
+    background-repeat: no-repeat;
+  }
+}
