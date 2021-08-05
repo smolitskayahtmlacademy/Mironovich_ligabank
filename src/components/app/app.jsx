@@ -1,16 +1,21 @@
 import React from 'react';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {Switch, BrowserRouter, Route} from 'react-router-dom';
 import MainPage from '../../pages/main-page/main-page';
+import NotFoundPage from '../../pages/not-found-page/not-found-page';
 
 import './app.module.scss';
-
 
 function App() {
   return (
     <BrowserRouter>
-      <Route exact path="/">
-        <MainPage />
-      </Route>
+      <Switch>
+        <Route exact path="/">
+          <MainPage />
+        </Route>
+        <Route >
+          <NotFoundPage />
+        </Route>
+      </Switch>
     </BrowserRouter>
   );
 }

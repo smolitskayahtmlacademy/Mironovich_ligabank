@@ -1,0 +1,16 @@
+.wrapper {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.notFound {
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 98px;
+  padding-left: 98px;
+}
+
+.title {
+  margin-top: 100px;
+}
