@@ -1,0 +1,72 @@
+.converter {
+  width: 100%;
+  min-height: 510px;
+  box-sizing: border-box;
+  padding: 48px 98px 100px 98px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 47px;
+  color: #1F1E25;
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 57px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.amount {
+  position: relative;
+  margin-bottom: 85px;
+}
+
+.amount:first-child::after {
+  content: '';
+  position: absolute;
+  right: -92px;
+  bottom: 15px;
+  width: 53px;
+  height: 18px;
+  background-image: url('../../assets/img/converter-arrow.svg');
+  background-repeat: no-repeat;
+}
+
+.amount:nth-child(2)::after {
+  content: '';
+  position: absolute;
+  left: -86px;
+  bottom: 34px;
+  width: 53px;
+  height: 18px;
+  background-image: url('../../assets/img/converter-arrow.svg');
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+}
+
+.submit {
+  cursor: pointer;
+  min-width: 382px;
+  height: 60px;
+  border: none;
+  background-color: #2C36F2;
+  border-radius: 4px;
+  color: #F6F7FF;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    background-color: #171E9D;
+  }
+}

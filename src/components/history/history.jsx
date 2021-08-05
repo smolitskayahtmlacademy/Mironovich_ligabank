@@ -9,15 +9,15 @@ const OPERATIONS = [
   {
     id: 0,
     date: '11.10.2020',
-    sellAmount: '87464643',
+    sellAmount: '8746',
     sellCurrency: 'RUB',
-    buyAmount: '47769859385',
+    buyAmount: '4776',
     buyCurrency: 'USD',
   },
   {
     id: 1,
     date: '11.10.2020',
-    sellAmount: '87464643',
+    sellAmount: '874',
     sellCurrency: 'RUB',
     buyAmount: '4776',
     buyCurrency: 'USD',
@@ -25,7 +25,7 @@ const OPERATIONS = [
   {
     id: 2,
     date: '11.10.2020',
-    sellAmount: '87464643',
+    sellAmount: '874',
     sellCurrency: 'RUB',
     buyAmount: '4776',
     buyCurrency: 'USD',
@@ -33,7 +33,7 @@ const OPERATIONS = [
   {
     id: 3,
     date: '11.10.2020',
-    sellAmount: '87464643',
+    sellAmount: '87',
     sellCurrency: 'RUB',
     buyAmount: '4776',
     buyCurrency: 'USD',
@@ -57,9 +57,9 @@ const OPERATIONS = [
   {
     id: 6,
     date: '11.10.2020',
-    sellAmount: '87464,643',
+    sellAmount: '874',
     sellCurrency: 'RUB',
-    buyAmount: '4776,8384747',
+    buyAmount: '4776',
     buyCurrency: 'USD',
   },
   {
@@ -67,7 +67,7 @@ const OPERATIONS = [
     date: '11.10.2020',
     sellAmount: '87443',
     sellCurrency: 'RUB',
-    buyAmount: '4778375893',
+    buyAmount: '477',
     buyCurrency: 'USD',
   },
   {
@@ -75,7 +75,7 @@ const OPERATIONS = [
     date: '11.10.2020',
     sellAmount: '87',
     sellCurrency: 'RUB',
-    buyAmount: '4776949499',
+    buyAmount: '477',
     buyCurrency: 'USD',
   },
 ];
