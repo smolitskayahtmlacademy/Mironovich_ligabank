@@ -1,0 +1,36 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: normal;
+  color: #1F1E25;
+}
+
+.item_date {
+  margin: 0 40px 0 0;
+}
+
+.item_sell {
+  display: block;
+  width: 140px;
+  position: relative;
+  margin: 0 15px 0 0;
+  padding-right: 50px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 41px;
+    height: 18px;
+    top: 2px;
+    right: -3px;
+    background-image: url('../../assets/img/arrow-sell.svg');
+    background-repeat: no-repeat;
+  }
+}
+
+.item_buy {
+  width: 140px;
+}
