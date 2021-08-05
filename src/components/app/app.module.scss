@@ -41,14 +41,7 @@ body {
   color: #1f1e25;
 }
 
-.container {
-  width: 100%;
-  margin: 0 auto;
-  padding-right: 98px;
-  padding-left: 98px;
-}
-
-:global(.visuallyHidden) {
+:global(.visually-hidden) {
   position: absolute;
   width: 1px;
   height: 1px;

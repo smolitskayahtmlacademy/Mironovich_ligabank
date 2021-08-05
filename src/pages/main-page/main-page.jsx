@@ -13,7 +13,7 @@ function MainPage() {
     <div className={styles.wrapper}>
       <Header />
       <main>
-        <h1 className="visuallyHidden">Лига банк - страница &quot;Конвертер валют&quot;</h1>
+        <h1 className="visually-hidden">Лига банк - страница &quot;Конвертер валют&quot;</h1>
         <Promo />
         <Converter />
         <History className={styles.history}/>

@@ -8,8 +8,9 @@ import styles from './calendar.module.scss';
 
 function Calendar({ selectedDate, onDateSelect }) {
   const DATE_FORMAT = 'dd.MM.yyyy';
+  const DAYS_PER_WEEK = 7;
   const minDate = new Date(TODAY);
-  minDate.setDate(minDate.getDate() - 7);
+  minDate.setDate(minDate.getDate() - DAYS_PER_WEEK);
 
   return (
     <DatePicker
