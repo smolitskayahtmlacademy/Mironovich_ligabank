@@ -69,4 +69,8 @@
   &:active {
     background-color: #171E9D;
   }
+
+  &:disabled {
+    opacity: 0.9;
+  }
 }

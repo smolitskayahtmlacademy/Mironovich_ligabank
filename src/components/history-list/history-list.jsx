@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import HistoryItem from '../history-item/history-item';
+import operationPropTypes from '../../operation.prop';
 
 import styles from './history-list.module.scss';
 
@@ -17,6 +18,7 @@ function HistoryList({operations, className=''}) {
 
 HistoryList.propTypes = {
   className: PropTypes.string,
+  operations: PropTypes.arrayOf(operationPropTypes),
 };
 
 export default HistoryList;

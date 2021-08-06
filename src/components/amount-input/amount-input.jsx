@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes, {number} from 'prop-types';
 import {DEFAULT_SELL_CURRENCY} from '../../constants';
 
 import styles from './amount-input.module.scss';
@@ -22,8 +23,8 @@ function AmountInput(
       <div className={styles.wrapper}>
         <label className={styles.label}>{labelTitle}</label>
         <input
+          type="number"
           className={styles.input}
-          maxLength={10}
           value={inputValue || 0}
           placeholder="Введите значение"
           onChange={onInputChange}
@@ -43,6 +44,19 @@ function AmountInput(
     </div>
   );
 }
+
+AmountInput.propTypes = {
+  labelTitle: PropTypes.string.isRequired,
+  inputValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  currencyValue: PropTypes.string,
+  options: PropTypes.arrayOf(PropTypes.string),
+  selectName: PropTypes.string.isRequired,
+  className: PropTypes.string,
+  onInputChange: PropTypes.func.isRequired,
+  onSelectChange: PropTypes.func.isRequired,
+  disabled: PropTypes.bool,
+  required: PropTypes.bool,
+};
 
 
 export default AmountInput;
