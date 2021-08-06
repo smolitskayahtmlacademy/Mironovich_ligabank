@@ -1,5 +1,6 @@
 import React from 'react';
-import PropTypes, {number} from 'prop-types';
+import PropTypes from 'prop-types';
+import {nanoid} from 'nanoid';
 import {DEFAULT_SELL_CURRENCY} from '../../constants';
 
 import styles from './amount-input.module.scss';
@@ -18,11 +19,15 @@ function AmountInput(
     disabled,
     required,
   }) {
+
+  const id = nanoid();
+
   return (
     <div className={`${styles.amountInput} ${className}`}>
       <div className={styles.wrapper}>
-        <label className={styles.label}>{labelTitle}</label>
+        <label className={styles.label} htmlFor={id}>{labelTitle}</label>
         <input
+          id={id}
           type="number"
           className={styles.input}
           value={inputValue || 0}

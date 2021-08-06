@@ -8,3 +8,6 @@ export const AMOUNT_PRECISION = 4;
 export const TODAY = new Date();
 
 export const MAX_OPERATIONS_COUNT = 10;
+
+export const DEFAULT_TOAST_MESSAGE = 'Something went wrong. Please try again.';
+export const TOAST_TIMEOUT = 10000;

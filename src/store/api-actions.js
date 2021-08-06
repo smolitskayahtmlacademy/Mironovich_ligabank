@@ -13,7 +13,7 @@ export const fetchTodayRates = () => (dispatch, _getState, api) => (
   api
     .get(`${API_TODAY_ROUTE}${API_KEY}&symbols=${currencies}`)
     .then(({data}) => {
-      dispatch(loadRates(data['rates']));
+      dispatch(loadRates(data.rates));
     })
 );
 
@@ -22,6 +22,6 @@ export const fetchHistoryRates = (date) => (dispatch, _getState, api) => {
   return api
     .get(`${adaptedDate}${API_KEY}&symbols=${currencies}`)
     .then(({data}) => {
-      dispatch(loadRates(data['rates']));
+      dispatch(loadRates(data.rates));
     });
 };

@@ -14,6 +14,7 @@ import {
   TODAY
 } from '../../constants';
 import Calendar from '../calendar/calendar';
+import Toast from '../toast/toast';
 
 import styles from './converter.module.scss';
 
@@ -116,6 +117,7 @@ function Converter() {
 
   return (
     <section className={styles.converter}>
+      {isError && <Toast />}
       <h2 className={styles.title}>Конвертер валют</h2>
       <form className={styles.form} action="#" method="get" onSubmit={onFormSubmit}>
         <AmountInput
