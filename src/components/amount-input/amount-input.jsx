@@ -15,6 +15,7 @@ function AmountInput(
     onInputChange,
     onSelectChange,
     disabled,
+    required,
   }) {
   return (
     <div className={`${styles.amountInput} ${className}`}>
@@ -27,6 +28,7 @@ function AmountInput(
           placeholder="Введите значение"
           onChange={onInputChange}
           disabled={disabled}
+          required={required}
         />
       </div>
       <select

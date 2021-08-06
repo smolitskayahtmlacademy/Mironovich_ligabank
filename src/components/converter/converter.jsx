@@ -37,6 +37,7 @@ function Converter() {
           onInputChange={() => {}}
           onSelectChange={() => {}}
           disabled={isDisabled}
+          required
         />
         <AmountInput
           className={styles.amount}
@@ -48,6 +49,7 @@ function Converter() {
           onInputChange={() => {}}
           onSelectChange={() => {}}
           disabled={isDisabled}
+          required
         />
         <Calendar
           selectedDate={selectedDate}
