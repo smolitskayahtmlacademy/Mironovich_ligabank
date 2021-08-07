@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://api.exchangeratesapi.io/v1';
+const BASE_URL = 'https://api.exchangeratesapi.io/v1';
 const REQUEST_TIMEOUT = 5000;
 
 
