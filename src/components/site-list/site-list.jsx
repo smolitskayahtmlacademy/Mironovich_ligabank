@@ -8,19 +8,19 @@ function SiteList({ className }) {
   return (
     <ul className={`${styles.siteList} ${className}`}>
       <li className={styles.siteListItem}>
-        <a href="#">Услуги</a>
+        <a href="/">Услуги</a>
       </li>
       <li className={styles.siteListItem}>
-        <a href="#">Рассчитать кредит</a>
+        <a href="/">Рассчитать кредит</a>
       </li>
       <li className={`${styles.siteListItem} ${styles.siteListItemActive}`}>
-        <a href="#">Конвертер валют</a>
+        <a href="/">Конвертер валют</a>
       </li>
       <li className={styles.siteListItem}>
-        <a href="#">Контакты</a>
+        <a href="/">Контакты</a>
       </li>
       <li className={styles.siteListItem}>
-        <a href="#">Задать вопрос</a>
+        <a href="/">Задать вопрос</a>
       </li>
     </ul>
   );

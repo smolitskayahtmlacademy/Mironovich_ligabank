@@ -112,6 +112,7 @@ function Converter() {
         .catch(() => setIsError(true))
         .finally(() => setIsDisabled(false));
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dispatch, selectedDate]);
 
 

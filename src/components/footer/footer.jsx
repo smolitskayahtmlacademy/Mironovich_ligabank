@@ -18,16 +18,16 @@ function Footer() {
       </div>
       <ul className={styles.nav}>
         <li className={styles.navItem}>
-          <a href="#">Услуги</a>
+          <a href="/">Услуги</a>
         </li>
         <li className={styles.navItem}>
-          <a href="#">Рассчитать кредит</a>
+          <a href="/">Рассчитать кредит</a>
         </li>
         <li className={styles.navItem}>
-          <a href="#">Контакты</a>
+          <a href="/">Контакты</a>
         </li>
         <li className={styles.navItem}>
-          <a href="#">Задать вопрос</a>
+          <a href="/">Задать вопрос</a>
         </li>
       </ul>
       <section className={styles.contacts}>
