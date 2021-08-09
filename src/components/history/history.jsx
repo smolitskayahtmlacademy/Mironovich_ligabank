@@ -22,7 +22,12 @@ function History({className=''}) {
       <div className={styles.wrapper}>
         <h3 className={styles.title}>История конвертаций</h3>
         <HistoryList operations={operations} className={styles.list} />
-        <button className={styles.button} type="button" onClick={onClick}>
+        <button
+          className={styles.button}
+          type="button"
+          onClick={onClick}
+          disabled={operations.length === 0}
+        >
           Очистить историю
         </button>
       </div>

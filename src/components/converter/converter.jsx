@@ -64,18 +64,20 @@ function Converter() {
     setSelectedDate(date);
   };
 
-  const onSellCurrencyChange = (evt) => {
-    const currency = evt.target.value;
-    setSellCurrency(currency);
+  const handleCurrencyChange = (currencyFunction, currency) => {
+    currencyFunction(currency);
     const newBuyAmount = convertAmount(parseFloat(sellAmount), currency, buyCurrency);
     setBuyAmount(newBuyAmount);
   };
 
+  const onSellCurrencyChange = (evt) => {
+    const currency = evt.target.value;
+    handleCurrencyChange(setSellCurrency, currency);
+  };
+
   const onBuyCurrencyChange = (evt) => {
     const currency = evt.target.value;
-    setBuyCurrency(currency);
-    const newSellAmount = convertAmount(parseFloat(buyAmount), sellCurrency, currency);
-    setSellAmount(newSellAmount);
+    handleCurrencyChange(setBuyCurrency, currency);
   };
 
   const onFormSubmit = (evt) => {
@@ -153,7 +155,7 @@ function Converter() {
           <button
             className={styles.submit}
             type="submit"
-            disabled={isDisabled}
+            disabled={isDisabled || parseFloat(sellAmount) === 0 || parseFloat(buyAmount) === 0}
           >
             Сохранить результат
           </button>

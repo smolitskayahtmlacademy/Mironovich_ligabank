@@ -56,4 +56,9 @@
   &:active {
     background-color: #171E9D;
   }
+
+  &:disabled {
+    background-color: #CCCCCC;
+    pointer-events: none;
+  }
 }

@@ -76,6 +76,7 @@
   }
 
   &:disabled {
-    opacity: 0.9;
+    background-color: #CCCCCC;
+    pointer-events: none;
   }
 }
