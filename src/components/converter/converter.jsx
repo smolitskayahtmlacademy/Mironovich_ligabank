@@ -38,8 +38,11 @@ function Converter() {
 
   const dispatch = useDispatch();
 
-  const convertAmount = (amount, sellCurr, buyCurr) => ((amount / exchangeRates[sellCurr] * exchangeRates[buyCurr])
-    .toFixed(AMOUNT_PRECISION));
+  const convertAmount = (amount, sellCurr, buyCurr) => {
+    const result = ((amount / exchangeRates[sellCurr] * exchangeRates[buyCurr])
+      .toFixed(AMOUNT_PRECISION));
+    return result;
+  };
 
   const setAmounts = (sum, fromFunc, toFunc, fromCurrency, toCurrency) => {
     const value = Math.abs(parseFloat(sum.toString().substring(0, MAX_INPUT_LENGTH)));
@@ -64,20 +67,18 @@ function Converter() {
     setSelectedDate(date);
   };
 
-  const handleCurrencyChange = (currencyFunction, currency) => {
-    currencyFunction(currency);
+  const onSellCurrencyChange = (evt) => {
+    const currency = evt.target.value;
+    setSellCurrency(currency);
     const newBuyAmount = convertAmount(parseFloat(sellAmount), currency, buyCurrency);
     setBuyAmount(newBuyAmount);
   };
 
-  const onSellCurrencyChange = (evt) => {
-    const currency = evt.target.value;
-    handleCurrencyChange(setSellCurrency, currency);
-  };
-
   const onBuyCurrencyChange = (evt) => {
     const currency = evt.target.value;
-    handleCurrencyChange(setBuyCurrency, currency);
+    setBuyCurrency(currency);
+    const newBuyAmount = convertAmount(parseFloat(sellAmount), sellCurrency, currency);
+    setBuyAmount(newBuyAmount);
   };
 
   const onFormSubmit = (evt) => {
@@ -87,9 +88,12 @@ function Converter() {
     const operation = {
       id: nanoid(),
       date: date,
-      sellAmount: sellAmount,
+      sellAmount: sellAmount.toString().replace('.', ','),
       sellCurrency: sellCurrency,
-      buyAmount: buyAmount,
+      buyAmount: buyAmount
+        .toString()
+        .replace('.', ',')
+        .replace(',0000', ''),
       buyCurrency: buyCurrency,
     };
 

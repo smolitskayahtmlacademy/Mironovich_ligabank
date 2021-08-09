@@ -11,3 +11,5 @@ export const MAX_OPERATIONS_COUNT = 10;
 
 export const DEFAULT_TOAST_MESSAGE = 'Something went wrong. Please try again.';
 export const TOAST_TIMEOUT = 10000;
+
+export const API_MAIN_ROUTE = '/';
