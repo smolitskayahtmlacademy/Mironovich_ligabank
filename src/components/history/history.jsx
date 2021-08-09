@@ -19,10 +19,10 @@ function History({className=''}) {
 
   return (
     <section className={`${styles.history} ${className}`}>
-      <div className={styles.historyContainer}>
+      <div className={styles.wrapper}>
         <h3 className={styles.title}>История конвертаций</h3>
-        <HistoryList operations={operations} className={styles.historyList} />
-        <button className={styles.clearButton} type="button" onClick={onClick}>
+        <HistoryList operations={operations} className={styles.list} />
+        <button className={styles.button} type="button" onClick={onClick}>
           Очистить историю
         </button>
       </div>

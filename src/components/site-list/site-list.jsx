@@ -6,20 +6,20 @@ import styles from './site-list.module.scss';
 
 function SiteList({ className }) {
   return (
-    <ul className={`${styles.siteList} ${className}`}>
-      <li className={styles.siteListItem}>
+    <ul className={`${styles.list} ${className}`}>
+      <li className={styles.item}>
         <a href="/">Услуги</a>
       </li>
-      <li className={styles.siteListItem}>
+      <li className={styles.item}>
         <a href="/">Рассчитать кредит</a>
       </li>
-      <li className={`${styles.siteListItem} ${styles.siteListItemActive}`}>
+      <li className={`${styles.item} ${styles.item_active}`}>
         <a href="/">Конвертер валют</a>
       </li>
-      <li className={styles.siteListItem}>
+      <li className={styles.item}>
         <a href="/">Контакты</a>
       </li>
-      <li className={styles.siteListItem}>
+      <li className={styles.item}>
         <a href="/">Задать вопрос</a>
       </li>
     </ul>

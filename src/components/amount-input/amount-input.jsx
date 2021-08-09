@@ -23,7 +23,7 @@ function AmountInput(
   const id = nanoid();
 
   return (
-    <div className={`${styles.amountInput} ${className}`}>
+    <div className={`${styles.amount_input} ${className}`}>
       <div className={styles.wrapper}>
         <label className={styles.label} htmlFor={id}>{labelTitle}</label>
         <input

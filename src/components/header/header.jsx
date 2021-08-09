@@ -8,8 +8,10 @@ import styles from './header.module.scss';
 function Header() {
   return (
     <header className={styles.header}>
-      <Logo className={styles.logo}/>
-      <MainNav />
+      <div className={styles.wrapper}>
+        <Logo className={styles.logo}/>
+        <MainNav />
+      </div>
     </header>
   );
 }

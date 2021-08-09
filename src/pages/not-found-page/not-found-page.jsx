@@ -10,7 +10,7 @@ function NotFoundPage() {
     <div className={styles.wrapper}>
       <Header />
       <main>
-        <section className={styles.notFound}>
+        <section className={styles.not_found}>
           <h1 className={styles.title}>404. Page not found</h1>
         </section>
       </main>

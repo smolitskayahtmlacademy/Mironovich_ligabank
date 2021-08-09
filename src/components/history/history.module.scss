@@ -1,11 +1,12 @@
 .history {
-  width: 100%;
+  width: 1366px;
   margin: 0 auto;
   padding-right: 98px;
   padding-left: 98px;
+  background-color: #FFFFFF;
 }
 
-.historyContainer {
+.wrapper {
   position: relative;
   min-height: 477px;
   padding: 45px 85px 39px 70px;
@@ -31,11 +32,11 @@
   line-height: 39px;
 }
 
-.historyList {
+.list {
   margin-bottom:49px;
 }
 
-.clearButton {
+.button {
   cursor: pointer;
   min-width: 198px;
   height: 51px;

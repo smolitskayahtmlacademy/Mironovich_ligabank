@@ -1,4 +1,4 @@
-.siteList {
+.list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -8,7 +8,7 @@
   line-height: 19px;
 }
 
-.siteListItem {
+.item {
   cursor: pointer;
   margin-right: 25px;
   margin-bottom: 5px;
@@ -23,11 +23,10 @@
   }
 }
 
-.siteListItem:last-child {
+.item:last-child {
   margin-right: 0;
 }
 
-
-.siteListItemActive {
+.item_active {
   color: #2C36F2;
 }

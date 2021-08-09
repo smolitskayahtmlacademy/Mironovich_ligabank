@@ -7,8 +7,8 @@ import styles from './main-nav.module.scss';
 
 function MainNav() {
   return (
-    <nav className={styles.mainNav}>
-      <SiteList className={styles.siteList}/>
+    <nav className={styles.nav}>
+      <SiteList className={styles.list}/>
       <LoginLink />
     </nav>
   );

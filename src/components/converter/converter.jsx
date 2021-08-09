@@ -119,44 +119,46 @@ function Converter() {
   return (
     <section className={styles.converter}>
       {isError && <Toast />}
-      <h2 className={styles.title}>Конвертер валют</h2>
-      <form className={styles.form} action="#" method="get" onSubmit={onFormSubmit}>
-        <AmountInput
-          className={styles.amount}
-          currencyValue={sellCurrency}
-          inputValue={sellAmount}
-          labelTitle={'У меня есть'}
-          options={CURRENCY_OPTIONS}
-          selectName={'currency-select'}
-          onInputChange={onSellInputChange}
-          onSelectChange={onSellCurrencyChange}
-          disabled={isDisabled}
-          required
-        />
-        <AmountInput
-          className={styles.amount}
-          currencyValue={buyCurrency}
-          inputValue={buyAmount}
-          labelTitle={'Хочу приобрести'}
-          options={CURRENCY_OPTIONS}
-          selectName={'currency-select'}
-          onInputChange={onBuyAmountChange}
-          onSelectChange={onBuyCurrencyChange}
-          disabled={isDisabled}
-          required
-        />
-        <Calendar
-          selectedDate={selectedDate}
-          onDateSelect={onDateSelect}
-        />
-        <button
-          className={styles.submit}
-          type="submit"
-          disabled={isDisabled}
-        >
-          Сохранить результат
-        </button>
-      </form>
+      <div className={styles.wrapper}>
+        <h2 className={styles.title}>Конвертер валют</h2>
+        <form className={styles.form} action="#" method="get" onSubmit={onFormSubmit}>
+          <AmountInput
+            className={styles.amount}
+            currencyValue={sellCurrency}
+            inputValue={sellAmount}
+            labelTitle={'У меня есть'}
+            options={CURRENCY_OPTIONS}
+            selectName={'currency-select'}
+            onInputChange={onSellInputChange}
+            onSelectChange={onSellCurrencyChange}
+            disabled={isDisabled}
+            required
+          />
+          <AmountInput
+            className={styles.amount}
+            currencyValue={buyCurrency}
+            inputValue={buyAmount}
+            labelTitle={'Хочу приобрести'}
+            options={CURRENCY_OPTIONS}
+            selectName={'currency-select'}
+            onInputChange={onBuyAmountChange}
+            onSelectChange={onBuyCurrencyChange}
+            disabled={isDisabled}
+            required
+          />
+          <Calendar
+            selectedDate={selectedDate}
+            onDateSelect={onDateSelect}
+          />
+          <button
+            className={styles.submit}
+            type="submit"
+            disabled={isDisabled}
+          >
+            Сохранить результат
+          </button>
+        </form>
+      </div>
     </section>
   );
 }

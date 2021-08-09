@@ -1,6 +1,11 @@
 .footer {
   background-color: #F6F7FF;
   height: 224px;
+}
+
+.wrapper {
+  width: 1366px;
+  height: 100%;
   padding: 49px 98px 87px 98px;
   margin: 0 auto;
   display: flex;
@@ -38,12 +43,12 @@
   font-weight: 500;
 }
 
-.navItem {
+.nav_item {
   display: flex;
   margin-bottom: 10px;
 }
 
-.navItem:last-child {
+.nav_item:last-child {
   margin-bottom: 0;
 }
 
@@ -64,7 +69,7 @@
   margin-right: 80px;
 }
 
-.phoneNumber {
+.phone_number {
   position: relative;
   display: block;
   margin-bottom: 2px;
@@ -82,7 +87,7 @@
   }
 }
 
-.phoneNumber_mobile::before {
+.phone_number_mobile::before {
   content: '';
   position: absolute;
   width: 10px;
@@ -93,7 +98,7 @@
   background-repeat: no-repeat;
 }
 
-.phoneInfo {
+.phone_info {
   color: #707C87;
   font-size: 12px;
   line-height: 17px;
@@ -106,7 +111,7 @@
   padding-left: 33px;
 }
 
-.phoneNumber_main::before {
+.phone_number_main::before {
   content: '';
   position: absolute;
   width: 16px;
