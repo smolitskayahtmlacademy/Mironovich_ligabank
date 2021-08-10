@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {nanoid} from 'nanoid';
-import {DEFAULT_SELL_CURRENCY} from '../../constants';
+import {DEFAULT_SELL_CURRENCY} from '../../utils/constants';
 
 import styles from './amount-input.module.scss';
 

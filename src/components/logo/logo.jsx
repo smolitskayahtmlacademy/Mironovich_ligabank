@@ -4,6 +4,7 @@ import logo from '../../assets/img/logo.svg';
 
 import styles from './logo.module.scss';
 
+
 function Logo({ className }) {
   return (
     <a className={`${styles.logo} ${className}`} href="/" >
@@ -15,9 +16,9 @@ function Logo({ className }) {
   );
 }
 
-
 Logo.propTypes = {
   className: PropTypes.string,
 };
+
 
 export default Logo;

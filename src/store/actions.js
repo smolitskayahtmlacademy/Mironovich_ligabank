@@ -7,7 +7,6 @@ export const ActionType = {
   REMOVE_OPERATIONS: 'operations/removeOperations',
 };
 
-
 export const loadRates = createAction(ActionType.LOAD_RATES, (exchangeRates) => ({
   payload: exchangeRates,
 }));

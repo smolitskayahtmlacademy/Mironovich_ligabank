@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import {TODAY} from '../../constants';
+import {TODAY} from '../../utils/constants';
 
 import styles from './calendar.module.scss';
 
@@ -25,10 +25,10 @@ function Calendar({ selectedDate=TODAY, onDateSelect }) {
   );
 }
 
-
 Calendar.propTypes = {
   selectedDate: PropTypes.oneOfType([PropTypes.string, PropTypes.instanceOf(Date)]),
   onDateSelect: PropTypes.func.isRequired,
 };
+
 
 export default Calendar;

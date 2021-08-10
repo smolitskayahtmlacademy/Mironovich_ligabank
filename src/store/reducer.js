@@ -1,6 +1,7 @@
 import {createReducer} from '@reduxjs/toolkit';
 import {addOperation, loadRates, removeOperations} from './actions';
-import {updateOperations} from '../utils';
+import {updateOperations} from '../utils/utils';
+
 
 const initialState = {
   operations: [],

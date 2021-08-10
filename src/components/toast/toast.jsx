@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import {DEFAULT_TOAST_MESSAGE, TOAST_TIMEOUT} from '../../constants';
+import {DEFAULT_TOAST_MESSAGE, TOAST_TIMEOUT} from '../../utils/constants';
 
 import styles from './toast.module.scss';
+
 
 function Toast({message = DEFAULT_TOAST_MESSAGE}) {
 
@@ -29,9 +30,9 @@ function Toast({message = DEFAULT_TOAST_MESSAGE}) {
   );
 }
 
-
 Toast.propTypes = {
   message: PropTypes.string,
 };
+
 
 export default Toast;

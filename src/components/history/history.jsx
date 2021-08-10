@@ -35,9 +35,9 @@ function History({className=''}) {
   );
 }
 
-
 History.propTypes = {
   className: PropTypes.string,
 };
+
 
 export default History;

@@ -1,4 +1,4 @@
-import {CURRENCY_OPTIONS} from '../constants';
+import {CURRENCY_OPTIONS} from '../utils/constants';
 import {loadRates} from './actions';
 import {adaptDateToServer} from '../adapter/adapter';
 

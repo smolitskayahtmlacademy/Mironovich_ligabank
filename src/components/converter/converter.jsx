@@ -12,7 +12,7 @@ import {
   DEFAULT_BUY_CURRENCY,
   DEFAULT_SELL_CURRENCY,
   TODAY
-} from '../../constants';
+} from '../../utils/constants';
 import Calendar from '../calendar/calendar';
 import Toast from '../toast/toast';
 
@@ -53,7 +53,7 @@ function Converter() {
     toFunc(convertAmount(value, fromCurrency, toCurrency));
   };
 
-  const onSellInputChange = (evt) => {
+  const onSellAmountChange = (evt) => {
     const value = evt.target.value;
     setAmounts(value, setSellAmount, setBuyAmount, sellCurrency, buyCurrency);
   };
@@ -135,7 +135,7 @@ function Converter() {
             labelTitle={'У меня есть'}
             options={CURRENCY_OPTIONS}
             selectName={'currency-select'}
-            onInputChange={onSellInputChange}
+            onInputChange={onSellAmountChange}
             onSelectChange={onSellCurrencyChange}
             disabled={isDisabled}
             required

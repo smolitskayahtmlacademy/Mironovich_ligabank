@@ -26,9 +26,9 @@ function SiteList({ className }) {
   );
 }
 
-
 SiteList.propTypes = {
   className: PropTypes.string,
 };
+
 
 export default SiteList;

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import operationPropTypes from '../../operation.prop';
+import operationPropTypes from '../../utils/operation.prop';
 
 import styles from './history-item.module.scss';
 
@@ -21,5 +21,6 @@ HistoryItem.propTypes = {
   className: PropTypes.string,
   operation: operationPropTypes.isRequired,
 };
+
 
 export default HistoryItem;
